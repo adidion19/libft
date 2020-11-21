@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:31:34 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:42:01 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:23:01 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		in_string(char c, char *str)
 {

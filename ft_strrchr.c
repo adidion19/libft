@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:14:01 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:44:33 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:25:13 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {

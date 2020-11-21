@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:14:44 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:45:15 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:25:50 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_toupper(int i)
 {

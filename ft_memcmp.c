@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 16:38:05 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:31:04 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:21:49 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

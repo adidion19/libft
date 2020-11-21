@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 16:09:20 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:30:51 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:21:37 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {

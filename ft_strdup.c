@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 10:57:46 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:42:58 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:23:30 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *src)
 {

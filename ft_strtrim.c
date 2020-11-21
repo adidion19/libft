@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 16:16:56 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:44:45 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:25:28 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		len_fin(char *s1, char *set)
 {

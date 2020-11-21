@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:12:26 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:30:07 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:20:59 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_isprint(int a)
 {

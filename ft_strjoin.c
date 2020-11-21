@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 14:05:48 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:43:11 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:23:46 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		len(char *str)
 {

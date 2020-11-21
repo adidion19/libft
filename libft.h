@@ -6,12 +6,12 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 11:15:10 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:26:48 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 12:48:36 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 #define LIBFT_H
 #include <stdlib.h>
-#include <unsitd.h>
+#include <unistd.h>
 #endif

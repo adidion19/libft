@@ -6,11 +6,11 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:09:45 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:28:29 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/21 13:19:31 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {
