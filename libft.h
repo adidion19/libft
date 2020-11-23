@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 11:15:10 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 12:48:36 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/23 13:43:45 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,5 @@
 #define LIBFT_H
 #include <stdlib.h>
 #include <unistd.h>
+size_t		ft_strlen(const char *str);
 #endif

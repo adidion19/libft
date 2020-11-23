@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:12:55 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 13:23:13 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/23 11:13:15 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	while (*str)
+	while (*str || c == 0)
 	{
 		if (*str == c)
 			return ((char *)str);

@@ -6,23 +6,16 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:31:34 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 14:00:09 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/23 17:46:40 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		in_string(char c, char *str)
+int		in_string(char c, char c2)
 {
-	int i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (c == str[i])
+	if (c == c2)
 			return (1);
-		i++;
-	}
 	return (0);
 }
 
@@ -36,7 +29,7 @@ int		fft_strlen(char *str)
 	return (i);
 }
 
-int		count_word(char *str, char *charset)
+int		count_word(char *str, char charset)
 {
 	int i;
 	int count;
@@ -57,7 +50,7 @@ int		count_word(char *str, char *charset)
 	return (count);
 }
 
-char	**ft_split(char const *s, char *c)
+char	**ft_split(char const *s, char c)
 {
 	int		i;
 	int		j;

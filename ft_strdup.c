@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 10:57:46 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 13:23:30 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/23 13:01:46 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_strdup(const char *src)
 	i = 0;
 	while (src[i])
 		i++;
-	dest = malloc(sizeof(char) * (i + 1));
+	if (!(dest = malloc(sizeof(char) * (i + 1))))
+		return (0);
 	i = -1;
 	while (src[++i])
 		dest[i] = src[i];

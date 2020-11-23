@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 14:05:48 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 13:54:40 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/23 14:02:46 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	len2 = len_((char*)s2);
 	if (len1 == 0 && len2 == 0)
 		return (0);
-	str = malloc(sizeof(char) * (len1 + len2 + 1));
+	if (!(str = malloc(sizeof(char) * (len1 + len2 + 1))))
+		return (0);
 	while (s1[++i])
 		str[i] = s1[i];
 	j = i;

@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 17:21:03 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 13:25:39 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/23 14:00:43 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	j = 0;
 	if (!(ans = malloc(sizeof(char) * len + 1)))
 		return (0);
+	if (start >= ft_strlen(s))
+        return (ans);
 	i = start;
 	len = len + start;
 	while (s[i] && i < len)

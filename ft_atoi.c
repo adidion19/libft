@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:09:45 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 13:19:31 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/23 12:46:42 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 int		ft_atoi(const char *str)
 {
-	unsigned int	i;
-	long			ans;
-	int				neg;
+	unsigned long long			i;
+	unsigned long long			ans;
+	int							neg;
 
 	i = 0;
 	ans = 0;
 	neg = 1;
+	while (str[i] == '\n' || str[i] == '\f' || str[i] == ' ' || str[i] == '\r' ||
+			str[i] == '\t' || str[i] == '\v')
+		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
@@ -34,5 +37,5 @@ int		ft_atoi(const char *str)
 		i++;
 	}
 	ans = ans * neg;
-	return (ans);
+	return ((int)ans);
 }
