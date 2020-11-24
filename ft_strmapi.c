@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 11:39:01 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/23 17:29:09 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/24 10:39:22 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	len = 0;
 	while (s[++i])
 		len++;
-	if(!(ans = malloc(sizeof(char) * (len + 1))))
+	if (!(ans = malloc(sizeof(char) * (len + 1))))
 		return (0);
 	i = 0;
 	while (s[i])

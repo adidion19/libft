@@ -6,13 +6,13 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 16:16:56 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/23 17:16:08 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/24 10:44:24 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     is_in_set(char c, char *set)
+int		is_in_set(char c, char *set)
 {
 	int i;
 	int bool_;
@@ -53,11 +53,11 @@ int		len_fin(char *str, char *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int i;
-	int j;
-	int start;
-	int end;
-	char *ans;
+	int		i;
+	int		j;
+	int		start;
+	int		end;
+	char	*ans;
 
 	i = 0;
 	j = 0;

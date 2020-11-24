@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:14:01 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/23 11:41:14 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/24 10:39:38 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrchr(const char *str, int c)
 
 	s2 = 0;
 	if (*str == (char)c)
-            s2 = (char *)str;
+		s2 = (char *)str;
 	while (*str)
 	{
 		if (*++str == (char)c)

@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 17:51:34 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/23 12:25:10 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/24 10:42:48 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		while (big[i + j] == little[j] && len > i + j)
 		{
 			j++;
-		if (!little[j])
-			return (((char*)big) + i);
+			if (!little[j])
+				return (((char*)big) + i);
 		}
 		i++;
 	}
