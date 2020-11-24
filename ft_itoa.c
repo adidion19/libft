@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:38:13 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/24 10:39:02 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/24 15:17:22 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,26 +58,24 @@ char	*ft_itoa(int n)
 	char			*ans;
 	int				bool_;
 	unsigned int	a;
+	int				i;
 
 	bool_ = 1;
+	i = 0;
 	if (!(ans = (char*)malloc(sizeof(char) * (len_of_int(n) + 1))))
 		return (0);
 	if (n < 0)
-	{
 		bool_ = 0;
-		a = -n;
-	}
-	else
-		a = n;
+	a = (n >= 0) ? n : -n;
 	while (a >= 10)
 	{
-		*ans++ = a % 10 + 48;
+		ans[i++] = a % 10 + 48;
 		a = a / 10;
 	}
-	*ans++ = a % 10 + 48;
+	ans[i++] = a % 10 + 48;
 	if (bool_ == 0)
-		*ans++ = '-';
-	*ans = '\0';
+		ans[i++] = '-';
+	ans[i] = '\0';
 	ft_strrev(ans);
 	return (ans);
 }
