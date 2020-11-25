@@ -6,7 +6,7 @@
 #    By: adidion <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/20 13:11:56 by adidion           #+#    #+#              #
-#    Updated: 2020/11/21 15:27:58 by adidion          ###   ########.fr        #
+#    Updated: 2020/11/25 10:36:13 by adidion          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,9 +33,8 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: 
-	fclean all
+re: fclean all
 
-so:
-	$(CC) -fPIC $(CFLAGS) $(SRC)
-	gcc -shared -o libft.so $(OBJ)
+#so:
+#	$(CC) -fPIC $(CFLAGS) $(SRC)
+#	gcc -shared -o libft.so $(OBJ)
