@@ -6,13 +6,13 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:38:13 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/24 15:17:22 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/26 13:49:09 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrev(char *str)
+static char	*ft_strrev(char *str)
 {
 	int		i;
 	int		len;
@@ -34,7 +34,7 @@ char	*ft_strrev(char *str)
 	return (str);
 }
 
-int		len_of_int(int n)
+static int	len_of_int(int n)
 {
 	int count;
 
@@ -53,7 +53,7 @@ int		len_of_int(int n)
 	return (count);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char			*ans;
 	int				bool_;

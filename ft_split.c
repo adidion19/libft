@@ -6,20 +6,20 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:31:34 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/25 14:09:37 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/26 13:48:13 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		in_string(char c, char c2)
+static int		in_string(char c, char c2)
 {
 	if (c == c2)
 		return (1);
 	return (0);
 }
 
-int		fft_strlen(char *str)
+static int		fft_strlen(char *str)
 {
 	int i;
 
@@ -29,7 +29,7 @@ int		fft_strlen(char *str)
 	return (i);
 }
 
-int		count_word(char *str, char charset)
+static int		count_word(char *str, char charset)
 {
 	int i;
 	int count;
@@ -50,7 +50,7 @@ int		count_word(char *str, char charset)
 	return (count);
 }
 
-char	**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
 	int		i;
 	int		j;
@@ -61,12 +61,12 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	index = 0;
 	tab = 0;
-	tab = (char**)malloc(sizeof(char*) * (count_word((char*)s, c) + 1));
-	if (!tab)
+	if (!s || !(tab = malloc(sizeof(char*) * (count_word((char*)s, c) + 1))))
 		return (0);
 	while (index < count_word((char*)s, c))
 	{
-		tab[index] = (char*)malloc(sizeof(char) * (fft_strlen((char*)s) + 1));
+		if (!(tab[index] = malloc(sizeof(char) * (fft_strlen((char*)s) + 1))))
+			free(tab[index]);
 		while (s[i] && in_string(((char*)s)[i], c))
 			i++;
 		while (s[i] && !in_string(((char*)s)[i], c))

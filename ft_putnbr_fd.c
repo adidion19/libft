@@ -6,18 +6,18 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 13:30:22 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/23 17:26:53 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/26 13:55:21 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(char c, int fd)
+static void	ft_putchar(char c, int fd)
 {
 	write(fd, &c, 1);
 }
 
-void	ft_putnbr_fd(int nb, int fd)
+void		ft_putnbr_fd(int nb, int fd)
 {
 	unsigned int a;
 

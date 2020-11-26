@@ -6,13 +6,13 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 16:16:56 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/24 10:44:24 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/26 13:28:33 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		is_in_set(char c, char *set)
+static int		is_in_set(char c, char *set)
 {
 	int i;
 	int bool_;
@@ -27,7 +27,7 @@ int		is_in_set(char c, char *set)
 	return (bool_);
 }
 
-int		len_fin(char *str, char *set)
+static int		len_fin(char *str, char *set)
 {
 	int i;
 	int count;
@@ -51,7 +51,7 @@ int		len_fin(char *str, char *set)
 	return (count);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char			*ft_strtrim(char const *s1, char const *set)
 {
 	int		i;
 	int		j;
@@ -61,8 +61,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	j = 0;
-	ans = malloc(sizeof(char) * (len_fin((char*)s1, (char*)set) + 1));
-	if (!ans)
+	if (!set || !s1 ||
+		!(ans = malloc(sizeof(char) * (len_fin((char*)s1, (char*)set) + 1))))
 		return (0);
 	while (1 == is_in_set(((char*)s1)[i], (char*)set))
 		i++;

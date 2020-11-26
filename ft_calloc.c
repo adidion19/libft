@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 10:37:01 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/25 17:51:04 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/26 13:16:12 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,16 @@
 
 void	*ft_calloc(size_t n, size_t size)
 {
-	int *mem;
-	int i;
+	size_t	*mem;
 
-	i = -1;
-	if ((size == 0) || (n == 0))
-		return (0);
+	if (n == 0 || size == 0)
+	{
+		n = 1;
+		size = 1;
+	}
 	if (!(mem = malloc(size * n)))
 		return (0);
-	while (mem[++i])
-		mem[i] = 0;
+	if (mem)
+		ft_bzero(mem, n * size);
 	return ((void*)mem);
 }

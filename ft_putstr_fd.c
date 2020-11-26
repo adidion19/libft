@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 17:42:45 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/21 13:22:50 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/26 13:52:21 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@ void	ft_putstr_fd(char *s, int fd)
 	int i;
 
 	i = -1;
-	while (s[++i])
-		write(fd, &s[i], 1);
+	if (s && fd)
+	{
+		while (s[++i])
+			write(fd, &s[i], 1);
+	}
 }

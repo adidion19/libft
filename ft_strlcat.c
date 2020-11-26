@@ -6,13 +6,13 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 11:58:48 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/25 13:12:05 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/26 13:12:44 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_len(char *str)
+static int		ft_len(char *str)
 {
 	int i;
 
@@ -22,7 +22,7 @@ int		ft_len(char *str)
 	return (i);
 }
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
+size_t			ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t len_src;
 	size_t len_dest;
