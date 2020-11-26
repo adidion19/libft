@@ -6,23 +6,30 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:09:45 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/26 13:15:40 by adidion          ###   ########.fr       */
+/*   Updated: 2020/11/26 14:53:38 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+static int	ft_isspace(char c)
 {
-	unsigned long long			i;
-	unsigned long long			ans;
-	int							neg;
+	if (c == '\n' || c == ' ' || c == '\t' ||
+	c == '\v' || c == '\f' || c == '\r')
+		return (1);
+	return (0);
+}
+
+static long	ft_strtol(const char *str)
+{
+	unsigned long long	i;
+	long long			ans;
+	int					neg;
 
 	i = 0;
 	ans = 0;
 	neg = 1;
-	while (str[i] == '\n' || str[i] == '\f' || str[i] == ' '
-			|| str[i] == '\r' || str[i] == '\t' || str[i] == '\v')
+	while (ft_isspace(str[i]) == 1)
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{
@@ -36,6 +43,16 @@ int		ft_atoi(const char *str)
 		ans = ans + str[i] - '0';
 		i++;
 	}
+	if (ans < 0)
+		return (ans = (neg > 0) ? -1 : 0);
 	ans = ans * neg;
-	return ((int)ans);
+	return ((long)ans);
+}
+
+int			ft_atoi(const char *str)
+{
+	long long i;
+
+	i = ft_strtol(str);
+	return ((int)i);
 }
