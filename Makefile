@@ -6,13 +6,13 @@
 #    By: adidion <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/20 13:11:56 by adidion           #+#    #+#              #
-#    Updated: 2020/11/30 15:43:21 by adidion          ###   ########.fr        #
+#    Updated: 2020/12/04 13:13:05 by adidion          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror -Iincludes
+CFLAGS = -Wall -Wextra -Werror
 
 NAME = libft.a
 

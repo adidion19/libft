@@ -6,7 +6,7 @@
 /*   By: adidion <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:31:34 by adidion           #+#    #+#             */
-/*   Updated: 2020/11/30 17:04:19 by adidion          ###   ########.fr       */
+/*   Updated: 2020/12/04 13:13:31 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,12 +50,12 @@ static int		count_word(char *str, char charset)
 	return (count);
 }
 
-static char		**free_tab(char **tab)
+static char		**free_tab(char **tab, int j)
 {
 	int i;
 
 	i = 0;
-	while (tab[i])
+	while (i < j && tab[i])
 	{
 		free(tab[i]);
 		i++;
@@ -75,12 +75,12 @@ char			**ft_split(char const *s, char c)
 	j = 0;
 	index = 0;
 	tab = 0;
-	if (!s || !(tab = malloc(sizeof(char*) * (count_word((char*)s, c) + 1))))
+	if (!s || !(tab = malloc(sizeof(*tab) * (count_word((char*)s, c) + 1))))
 		return (0);
 	while (index < count_word((char*)s, c))
 	{
 		if (!(tab[index] = malloc(sizeof(char) * (fft_strlen((char*)s) + 1))))
-			return (free_tab(tab));
+			return (free_tab(tab, i));
 		while (s[i] && in_string(((char*)s)[i], c))
 			i++;
 		while (s[i] && !in_string(((char*)s)[i], c))
